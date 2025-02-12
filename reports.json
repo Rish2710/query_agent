@@ -1,0 +1,9 @@
+[
+    {"title": "Win/Loss Ratio Across Sales Territories", "description": "A breakdown of sales performance by region."},
+    {"title": "Customer Acquisition Cost by Channel", "description": "Detailed analysis of acquisition cost per marketing channel."},
+    {"title": "Monthly Recurring Revenue Breakdown", "description": "MRR details by customer type and geography."},
+    {"title": "Lead Generation Cost per Channel", "description": "Cost efficiency of different lead generation strategies."},
+    {"title": "Feature Adoption Rate", "description": "Analysis of product feature adoption among users."},
+    {"title": "Quarterly Deal Conversion Rate", "description": "Conversion rates segmented by region and industry."},
+    {"title": "Sales Performance Analysis", "description": "Performance analysis across product lines and customer segments."}
+]
