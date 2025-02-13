@@ -1,6 +1,7 @@
 from internal_knowledgebase import search_reports
 from external_apibase import fetch_external_reports
 from probing_question import generate_probing_questions
+from ticket_logger_slack_notifier import log_ticket
 
 
 def main():
@@ -24,6 +25,7 @@ def main():
                 continue
         
         # Stage 2: Search External API
+        print("\n🤖 Searching External knowledge base!")
         reports = fetch_external_reports(query)
         if reports:
             print("\n🔍 External Reports Found:")
@@ -46,6 +48,8 @@ def main():
 
         # Stage 4: Escalation
         print("\n🤖 No relevant reports found. Escalating to CSM team...")
+        
+        log_ticket(query, reports, probing_details)
 
         
 if __name__ == "__main__":
