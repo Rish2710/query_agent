@@ -5,7 +5,7 @@ from internal_knowledgebase import generate_embedding
 
 # Initialize ChromaDB Client
 client = chromadb.PersistentClient(path=CHROMADB_PATH)
-collection = client.get_or_create_collection(name="reports")
+collection = client.get_or_create_collection(name="analytics_reports")
 
 
 def load_reports():
@@ -19,3 +19,5 @@ def load_reports():
         vector = generate_embedding(title + " " + desc)
 
         collection.add(ids=[title], embeddings=[vector], metadatas=[{"title": title, "desc": desc}])
+
+load_reports()

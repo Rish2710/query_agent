@@ -5,7 +5,7 @@ from config import CHROMADB_PATH, GINA_API_URL, GINA_API_KEY
 
 # Initialize ChromaDB Client
 client = chromadb.PersistentClient(path=CHROMADB_PATH)
-collection = client.get_or_create_collection(name="reports")
+collection = client.get_or_create_collection(name="analytics_reports")
 
 def generate_embedding(text):
     """Generates embeddings using Gina API."""
