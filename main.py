@@ -39,7 +39,7 @@ def main():
         # Stage 3: Intelligent Probing
         print("\n🤖 No Matching Reports Found.")
         print("\n🤖 Let's refine your request further.")
-        probing_questions = generate_probing_questions()
+        probing_questions = generate_probing_questions(query)
         probing_details = {}
         
         for question in probing_questions:
