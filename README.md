@@ -45,6 +45,8 @@ Edit `config.py` and update the following values:
 ```python
 GINA_API_URL = "https://api.gina.com/v1/embedding"
 GINA_API_KEY = "your_api_key_here"
+LLM_API_URL = "https://api-inference.huggingface.co/models/Qwen/Qwen2.5-72B-Instruct/v1/chat/completions"
+LLM_API_KEY = "your_llm_api_key_here"
 
 SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/your/slack/webhook"
 
